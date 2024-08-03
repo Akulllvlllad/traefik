@@ -12,6 +12,7 @@ services:
       - "--entrypoints.https.address=:443"
       - "--entrypoints.https.http.tls.certResolver=le"
       - "--certificatesresolvers.le.acme.httpchallenge=true"
+      - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=http"
       - "--certificatesresolvers.le.acme.email=akulllvlllad@gmail.com"
       - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
     ports:
